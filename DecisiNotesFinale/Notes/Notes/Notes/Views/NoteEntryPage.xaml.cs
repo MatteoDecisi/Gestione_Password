@@ -43,7 +43,7 @@ namespace Notes.Views
         {
             var note = (Note)BindingContext;
             note.Date = DateTime.UtcNow;
-            if (!string.IsNullOrWhiteSpace(note.Text))
+            if (!string.IsNullOrWhiteSpace(note.ServiceName))
             {
                 await App.Database.SaveNoteAsync(note);
             }
