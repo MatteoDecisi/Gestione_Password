@@ -13,8 +13,17 @@
 
     <!-- Layout children vertically -->
     <StackLayout Margin="{StaticResource PageMargin}">
-        <Editor Placeholder="Enter your note"
-                Text="{Binding Text}"
+        <Editor Placeholder="Service Name"
+                Text="{Binding ServiceName}"
+                HeightRequest="100" />
+        <Editor Placeholder="Username"
+                Text="{Binding Username}"
+                HeightRequest="100" />
+        <Editor Placeholder="Password"
+                Text="{Binding Password}"
+                HeightRequest="100" />
+        <Editor Placeholder="URL"
+                Text="{Binding URL}"
                 HeightRequest="100" />
         <Grid ColumnDefinitions="*,*">
             <!-- Layout children in two columns -->

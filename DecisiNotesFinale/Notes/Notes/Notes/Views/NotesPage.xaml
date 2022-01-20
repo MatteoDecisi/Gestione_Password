@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Notes.Views.NotesPage"
-             Title="Notes">
+             Title="Passord Manager">
 
     <ContentPage.Resources>
         <!-- Define a visual state for the Selected state of the CollectionView -->
@@ -42,7 +42,7 @@
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <StackLayout>
-                    <Label Text="{Binding Text}"
+                    <Label Text="{Binding ServiceName}"
                            FontSize="Medium" />
                     <Label Text="{Binding Date}"
                            TextColor="{StaticResource TertiaryColor}"
